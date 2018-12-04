@@ -9,13 +9,15 @@
                 ["", "turn robot %m.turnDirections speed %n", "turn/speed", "left", 1],
                 ["", "take off drone", "drone/takeoff"],
                 ["", "land drone", "drone/land"],
-                ["r", "frontal laser distance", "laser/frontal"],
+                ["r", "laser distance %m.laserDirection", "laser/distance", "frontal"],
                 ["r", "color detection %m.color", "camera/all","red"],
                 ["r", "get pose3D", "camera/pose3D"],
         ],
         "menus": {
                 "robotDirections": ["forward", "back"],
                 "turnDirections": ["left", "right"],
-                "color": ["red", "blue"]
+                "color": ["red", "blue"],
+                "laserDirection": ["frontal", "left", "right"]
         }
 }
+
